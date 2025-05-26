@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>이벤트 함수 예시</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .blue-background {
+            background-color: lightsteelblue;
+        }
+    </style>
+    <script src = "java.js">
+    </script>
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td><img src="그로밋 메인 사진.jpeg" width="150"></td>
+                <td><h1><span style="color:blue">이다현</span> 의 관심사를 소개합니다 !</h1></td>
+            </tr>
+        </table>
+        <hr>
+    </header>
+    <section>
+        <article>
+            <form>
+                <fieldset id="">
+                    <legend> <음악> </legend>
+                        <ul>
+                            <table id="table" table border="2">
+                                <tr>
+                                    <td rowspan="2"><img src="허회경.jpeg" width="130" id="myImage" onmouseover="changeImageSize()" onmouseout="this.style.width = '130px'"></td> <!-- 이벤트 함수: 마우스를 가져다 대면 사진 크기 변경 -->
+                                    <td><h2 id="p">허회경</h2></td> 
+                                    
+                            
+                                </tr>
+                                <td> (인디뮤직 / 포크 가수)</td>
+                                <tr>
+                                    <td>소속사</td>
+                                    <td>문화인</td>
+                                </tr>
+                                <tr>
+                                    <td>데뷔</td>
+                                    <td>2021 싱글 앨범<br>[아무것도 상관없어]</td>
+                                </tr>
+                                <tr>
+                                    <td>사이트</td>
+                                    <td><a href="https://www.instagram.com/ilovesushikyung/">인스타그램</a></td>
+                                </tr>
+                            </table>
+                            <br>
+                            <li><a class="title" href="https://youtu.be/0kmHEKcRjpo">김철수 씨 이야기<sub>(클릭 -> 유튜브 연결)</sub></a></li>
+                            <br>
+                            <fieldset>
+                                <legend id="intro">앨범 소개</legend>
+                                <p>인생은 늘 마음대로 흘러가지 않지만 그 흐름 속에서 사소한 행복을 찾아가는 게 내가 할 수 있는 최선인 것 같습니다.
+                                </p>
+                            </fieldset>
+                            <br>
+                            <li><a class="title" href="https://youtu.be/hmOOkmynj4A">그렇게 살아가는 것<sub>(클릭 -> 유튜브 연결)</sub></a></li>
+                            <br>
+                            <button id="myButton">Click Me</button> <!--//jquery 사용하여 버튼 누르면 버튼 텍스트 바꾸기-->
+                            <script src="java.js"></script>
+                            <script>
+                                document.write("<br>생일 : ",birthday) //퓨어 함수 : 배열에 생일 저장하고 출력
+                                name(); //퓨어함수 : 이름 역순으로 출력하기
+                                add(); //퓨어함수 : 값 더해서 반환
+                            </script>
+                            </fieldset>   
+                        </ul>
+                </fieldset>
+            </form>
+        </article>
+        <footer>
+            <form>
+                <fieldset class="box2">
+                    <legend>CHECK !</legend>
+                        <P id="myB" onclick="changeText()"> Q1. 허회경의 데뷔년도는?</P>  <!-- 이벤트 함수: 텍스트 변경 -->
+                        <form method="get">
+                            <input type="text" name="check">
+                            <input type="submit">
+                        </form>
+                        <p>Q2. 허회경의 첫번째 앨범은?</p>
+                        <form method="post">
+                            <input type="text" name="check">
+                            <input type="submit">
+                        </form>
+
+                </fieldset>
+            </form>
+        </footer>
+    </section>
+</body>
+</html>
