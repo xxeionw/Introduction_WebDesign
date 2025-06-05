@@ -106,8 +106,7 @@ JQuery와 자바스크립트 이벤트 함수를 활용해, 음악가 허회경�
 
 ---
 ## 🖼️실행결과
-
-
+<img src = "https://github.com/user-attachments/assets/2f627b60-4720-41fd-b5e1-5f28d8caf471" width ="400">
 ---
 
 ## ✨배운점 
